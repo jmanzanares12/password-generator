@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState} from 'react';
 
 const ContainerApp = () => {
     const [password, setPassword] = useState('');
@@ -20,7 +20,6 @@ const ContainerApp = () => {
                 <div className="passwordBox">
                     <input type="text" placeholder="Password" value={password} readOnly />
                     <button onClick={generatePassword}>Generate</button>
-                    <button>Generate</button>
                 </div>
             </div>
         </div>
