@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ContainerApp from './components/containerApp'
-import './App.css'
 
 function App() {
 
   return (
     <>
-      <ContainerApp />
+      <ContainerApp /> 
     </>
   )
 }
