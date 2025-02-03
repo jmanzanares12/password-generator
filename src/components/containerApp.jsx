@@ -1,4 +1,5 @@
 import {React, useState} from 'react';
+import '../styles/containerApp.css';
 
 const ContainerApp = () => {
     const [password, setPassword] = useState('');
@@ -14,7 +15,7 @@ const ContainerApp = () => {
     }
 
     return (
-        <div>        
+        <div className="main">        
             <h1>Password Generator</h1>
             <div className="passwordContainer">
                 <div className="passwordBox">
