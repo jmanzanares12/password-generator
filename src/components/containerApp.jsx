@@ -4,7 +4,12 @@ const ContainerApp = () => {
     return (
         <div>        
             <h1>Password Generator</h1>
-            <p>This is a password generator</p>
+            <div className="passwordContainer">
+                <div className="passwordBox">
+                    <input type="text" placeholder="Password" />
+                    <button>Generate</button>
+                </div>
+            </div>
         </div>
     )
 }
