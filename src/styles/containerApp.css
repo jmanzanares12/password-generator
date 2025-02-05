@@ -74,3 +74,28 @@
 .passwordBox button:active{
     transform: scale(0.98);
 }
+
+/*``` Mobile ```*/
+
+@media (max-width: 768px) {
+    .passwordContainer{
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        border: 0;
+    }
+    .passwordBox{
+        width: 100%;
+        gap: 10px;
+    }
+
+    .passwordBox input{
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .passwordBox button{
+        height: 40px;
+        font-size: 14px;
+    }
+}
