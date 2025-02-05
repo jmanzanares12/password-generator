@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import { React, useState } from 'react';
 import '../styles/containerApp.css';
 
 const ContainerApp = () => {
@@ -15,12 +15,13 @@ const ContainerApp = () => {
     }
 
     return (
-        <div className="main">        
-            <h1>Password Generator</h1>
+        <div className="main">
             <div className="passwordContainer">
+                <h1>Password Generator</h1>
                 <div className="passwordBox">
-                    <input type="text" placeholder="Password" value={password} readOnly />
+                    <input type="text" placeholder="Your password is..." value={password} readOnly />
                     <button onClick={generatePassword}>Generate</button>
+                    <button onClick={() => setPassword('')}>Clear</button>
                 </div>
             </div>
         </div>

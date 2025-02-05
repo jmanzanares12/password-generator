@@ -1,57 +1,76 @@
-.main {
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #3a3a3a;
-    color: #ffffff;
+    background-color: #f0f2f5;
+    color: #333333;
 }
 
-.passwordContainer {
+.passwordContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 700px;
     height: 500px;
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.passwordBox {
+.passwordBox{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 200px;
+    gap: 20px;
 }
 
-.passwordBox input {
+.passwordBox input{
     width: 100%;
     height: 50px;
     padding: 10px;
     font-size: 16px;
-    border-radius: 5px;
-    border: none;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0e0;
     outline: none;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333333;
+    background-color: #f9f9f9;
 }
 
-.passwordBox button {
+.passwordBox input::placeholder{
+    color: #999999;
+}
+
+.passwordBox button{
     width: 100%;
     height: 50px;
     font-size: 16px;
-    border-radius: 5px;
+    font-weight: 500;
+    border-radius: 10px;
     border: none;
     outline: none;
-    background-color: #007bff;
+    background-color: #4CAF50;
     color: #ffffff;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.passwordBox button:hover {
-    background-color: #0069d9;
+.passwordBox button:hover{
+    background-color: #45a049;
+}
+
+.passwordBox button:active{
+    transform: scale(0.98);
 }
