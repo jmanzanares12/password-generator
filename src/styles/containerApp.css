@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #dfdfdf;
+    background-color: #3a3a3a;
+    color: #ffffff;
 }
 
 .passwordContainer {
