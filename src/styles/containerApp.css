@@ -75,27 +75,40 @@
     transform: scale(0.98);
 }
 
-/*``` Mobile ```*/
+/* Estilos para Teléfonos (Pantallas menores a 600px) */
+@media (max-width: 600px) {
+    .passwordContainer {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
 
-@media (max-width: 768px) {
-    .passwordContainer{
+    .passwordBox {
         width: 100%;
         height: auto;
-        padding: 15px;
-        border: 0;
-    }
-    .passwordBox{
-        width: 100%;
-        gap: 10px;
+        gap: 15px;
     }
 
-    .passwordBox input{
-        height: 40px;
-        font-size: 14px;
+    .passwordBox input,
+    .passwordBox button {
+        height: 45px;
+    }
+}
+
+/*  Estilos para Tablets (Pantallas menores a 1024px) */
+@media (max-width: 1024px) {
+    .passwordContainer {
+        width: 80%;
     }
 
-    .passwordBox button{
-        height: 40px;
-        font-size: 14px;
+    .passwordBox {
+        width: 90%;
+    }
+}
+
+/*  Estilos para Pantallas Grandes (Escritorio) */
+@media (min-width: 1025px) {
+    .passwordContainer {
+        width: 700px;
     }
 }
